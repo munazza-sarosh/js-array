@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        const uni = [
+            {
+                department: "Computer Science",
+                students: [
+                    { name: "Munazza", age: 20 },
+                    { name: "Maria", age: 21 }
+                ]
+            },
+            {
+                department: "Software Engineering",
+                students: [
+                    { name: "Hania", age: 20 },
+                    { name: "Azka", age: 22 }
+                ]
+            }
+        ]
+        uni.forEach(university => {
+            university.students.forEach(student => {
+                console.log(student.name);
+            });
+        });
+        uni.forEach(university => {
+            university.students.forEach(student => {
+                console.log(student.age);
+            });
+        });
+        const student = [
+            {
+                name: "Munazza",
+                subjects: [
+                    { name: "Math", marks: 85 },
+                    { name: "Science", marks: 78 }
+                ]
+            },
+            {
+                name: "Mahnoor",
+                subjects: [
+                    { name: "Math", marks: 50 },
+                    { name: "Science", marks: 81 }
+                ]
+            },
+            {
+                name: "taiba",
+                subjects: [
+                    { name: "Math", marks: 65 },
+                    { name: "Science", marks: 98 }
+                ]
+            },
+
+        ]
+
+        // marks
+        student.forEach(students => {
+            students.subjects.forEach(student_ => {
+                console.log(student_.marks);
+            });
+        });
+        // names
+
+        student.forEach(names => {
+            console.log(names.name);
+
+        });
+
+        // all
+        student.forEach(students => {
+            students.subjects.forEach(student_ => {
+                console.log(students.name, student_.name, student_.marks);
+            });
+        });
+
+        const restaurants = [
+            {
+                category: "breakfast",
+                items: [
+                    { name: "egg", price: 200, },
+                    { name: "paratha", price: 100 }
+                ],
+                category: "drinks",
+                items: [
+                    { name: "tea", price: 70 },
+                    { name: "colddrink", price: 150 }
+                ]
+            }
+        ]
+        // category
+        restaurants.forEach(food => {
+            console.log(food.category);
+        });
+
+        // items
+        restaurants.forEach(food => {
+            console.log(food.items);
+        });
+
+        // all
+        restaurants.forEach(food => {
+            food.items.forEach(foods => {
+                console.log(foods.name); console.log(foods.price);
+            });
+        });
+    </script>
+</body>
+
+</html>
